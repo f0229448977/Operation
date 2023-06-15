@@ -27,7 +27,7 @@ namespace Operation
                 "英文名字是：" + txtEnglishName.Text + "," + "\n" +
                 "性別是：" + txtSex.Text + "," + "\n" +
                 "星座是：" + txtSign.Text + "," + "\n"+
-                "很高興認識你唷!!!"
+                "很高興認識你唷!"
                 ) ;
         }
 
