@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.btnOpenOpration8 = new System.Windows.Forms.Button();
             this.btnOpenOpration9 = new System.Windows.Forms.Button();
             this.btnOpenOpration7 = new System.Windows.Forms.Button();
             this.btnOpenOpration6 = new System.Windows.Forms.Button();
@@ -78,7 +77,6 @@
             // 
             this.splitContainer2.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer2.Panel1.BackgroundImage")));
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.splitContainer2.Panel1.Controls.Add(this.btnOpenOpration8);
             this.splitContainer2.Panel1.Controls.Add(this.btnOpenOpration9);
             this.splitContainer2.Panel1.Controls.Add(this.btnOpenOpration7);
             this.splitContainer2.Panel1.Controls.Add(this.btnOpenOpration6);
@@ -99,25 +97,14 @@
             this.splitContainer2.SplitterDistance = 554;
             this.splitContainer2.TabIndex = 0;
             // 
-            // btnOpenOpration8
-            // 
-            this.btnOpenOpration8.Font = new System.Drawing.Font("微軟正黑體", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnOpenOpration8.Location = new System.Drawing.Point(23, 440);
-            this.btnOpenOpration8.Name = "btnOpenOpration8";
-            this.btnOpenOpration8.Size = new System.Drawing.Size(330, 55);
-            this.btnOpenOpration8.TabIndex = 8;
-            this.btnOpenOpration8.Text = "08 - 小畫家";
-            this.btnOpenOpration8.UseVisualStyleBackColor = true;
-            this.btnOpenOpration8.Click += new System.EventHandler(this.btnOpenOpration8_Click_1);
-            // 
             // btnOpenOpration9
             // 
             this.btnOpenOpration9.Font = new System.Drawing.Font("微軟正黑體", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnOpenOpration9.Location = new System.Drawing.Point(23, 501);
+            this.btnOpenOpration9.Location = new System.Drawing.Point(23, 440);
             this.btnOpenOpration9.Name = "btnOpenOpration9";
             this.btnOpenOpration9.Size = new System.Drawing.Size(330, 55);
             this.btnOpenOpration9.TabIndex = 7;
-            this.btnOpenOpration9.Text = "09 - Picture Viewer";
+            this.btnOpenOpration9.Text = "08 - Picture Viewer";
             this.btnOpenOpration9.UseVisualStyleBackColor = true;
             this.btnOpenOpration9.Click += new System.EventHandler(this.btnOpenOpration9_Click);
             // 
@@ -232,7 +219,6 @@
         private System.Windows.Forms.Button btnOpenOpration6;
         private System.Windows.Forms.Button btnOpenOpration7;
         private System.Windows.Forms.Button btnOpenOpration9;
-        private System.Windows.Forms.Button btnOpenOpration8;
     }
 }
 

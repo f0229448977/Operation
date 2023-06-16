@@ -92,15 +92,11 @@ namespace Operation
 
         private void btnOpenOpration9_Click(object sender, EventArgs e)
         {
-            Operation09 OP09 = new Operation09();
+            Operation08 OP09 = new Operation08();
             frmCall(OP09);
         }
 
-        private void btnOpenOpration8_Click_1(object sender, EventArgs e)
-        {
-            Operation08 OP08 = new Operation08();
-            frmCall(OP08);
-        }
+ 
     }
     }
 
