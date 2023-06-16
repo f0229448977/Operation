@@ -18,16 +18,16 @@ namespace Operation
             InitializeComponent();
 
         }
-        int result , Num1, Num2;
+        double result , Num1, Num2;
         
         private void button1_Click(object sender, EventArgs e)
         {
-            bool IsNum1 = int.TryParse(txtNum1.Text, out Num1);
-            bool IsNum2 = int.TryParse(txtNum2.Text, out Num2);
+            bool IsNum1 = double.TryParse(txtNum1.Text, out Num1);
+            bool IsNum2 = double.TryParse(txtNum2.Text, out Num2);
 
                 if (IsNum1 == true && IsNum2 == true)
             {
-                result = Convert.ToInt32(txtNum1.Text) + Convert.ToInt32(txtNum2.Text);
+                result = Convert.ToDouble(txtNum1.Text) + Convert.ToDouble(txtNum2.Text);
                 txtAnswer.Text = Convert.ToString(result);
             }
             else
@@ -38,12 +38,12 @@ namespace Operation
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            bool IsNum1 = int.TryParse(txtNum1.Text, out Num1);
-            bool IsNum2 = int.TryParse(txtNum2.Text, out Num2);
+            bool IsNum1 = double.TryParse(txtNum1.Text, out Num1);
+            bool IsNum2 = double.TryParse(txtNum2.Text, out Num2);
 
             if (IsNum1 == true && IsNum2 == true)
             {
-                result = Convert.ToInt32(txtNum1.Text) - Convert.ToInt32(txtNum2.Text);
+                result = Convert.ToDouble(txtNum1.Text) - Convert.ToDouble(txtNum2.Text);
                 txtAnswer.Text = Convert.ToString(result);
             }
             else
@@ -56,11 +56,11 @@ namespace Operation
 
         private void btnmultip_Click(object sender, EventArgs e)
         {
-            bool IsNum1 = int.TryParse(txtNum1.Text, out Num1);
-            bool IsNum2 = int.TryParse(txtNum2.Text, out Num2);
+            bool IsNum1 = double.TryParse(txtNum1.Text, out Num1);
+            bool IsNum2 = double.TryParse(txtNum2.Text, out Num2);
             if (IsNum1 == true && IsNum2 == true)
             {
-                result = Convert.ToInt32(txtNum1.Text) * Convert.ToInt32(txtNum2.Text);
+                result = Convert.ToDouble(txtNum1.Text) * Convert.ToDouble(txtNum2.Text);
                 txtAnswer.Text = Convert.ToString(result);
             }
             else
@@ -71,12 +71,21 @@ namespace Operation
 
         private void btnDivided_Click(object sender, EventArgs e)
         {
-            bool IsNum1 = int.TryParse(txtNum1.Text, out Num1);
-            bool IsNum2 = int.TryParse(txtNum2.Text, out Num2);
+            bool IsNum1 = double.TryParse(txtNum1.Text, out Num1);
+            bool IsNum2 = double.TryParse(txtNum2.Text, out Num2);
             if (IsNum1 == true && IsNum2 == true)
             {
-                result = Convert.ToInt32(txtNum1.Text) / Convert.ToInt32(txtNum2.Text);
-                txtAnswer.Text = Convert.ToString(result);
+                if (Convert.ToInt32(txtNum2.Text) != 0)
+                {
+                    result = Convert.ToDouble(txtNum1.Text) / Convert.ToDouble(txtNum2.Text);
+                    txtAnswer.Text = Convert.ToString(result);
+                }
+                else 
+                {
+                    MessageBox.Show("被除數不可為 0 ");
+                }
+
+                
             }
             else
             {

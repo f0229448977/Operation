@@ -199,9 +199,9 @@
             this.labShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labShow.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labShow.ForeColor = System.Drawing.Color.Black;
-            this.labShow.Location = new System.Drawing.Point(46, 67);
+            this.labShow.Location = new System.Drawing.Point(46, 74);
             this.labShow.Name = "labShow";
-            this.labShow.Size = new System.Drawing.Size(362, 142);
+            this.labShow.Size = new System.Drawing.Size(362, 135);
             this.labShow.TabIndex = 12;
             this.labShow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 

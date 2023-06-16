@@ -169,6 +169,7 @@
             // 
             // btnTotal
             // 
+            this.btnTotal.Enabled = false;
             this.btnTotal.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnTotal.Location = new System.Drawing.Point(390, 113);
             this.btnTotal.Name = "btnTotal";

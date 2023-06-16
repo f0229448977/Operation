@@ -160,6 +160,7 @@
             this.btnHello.Style = Sunny.UI.UIStyle.Custom;
             this.btnHello.TabIndex = 11;
             this.btnHello.Text = "  Say Hello！";
+            this.btnHello.Click += new System.EventHandler(this.btnHello_Click_1);
             // 
             // btnSayHi
             // 
@@ -175,6 +176,7 @@
             this.btnSayHi.Style = Sunny.UI.UIStyle.Custom;
             this.btnSayHi.TabIndex = 12;
             this.btnSayHi.Text = "   Say Hi！";
+            this.btnSayHi.Click += new System.EventHandler(this.btnSayHi_Click_1);
             // 
             // Operation01
             // 

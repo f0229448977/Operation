@@ -29,7 +29,7 @@ namespace Operation
             Int32.TryParse(txtYear.Text, out year);//期限
             Int32.TryParse(txtDownPay.Text, out downpay);//頭期
 
-            if (money > 0 && rate > 0 && year > 0 && downpay > 0)
+            if (money > 0 && rate > 0 && year > 0 )
             {
                 //PMT=money*(1+rate/12%)^(year*12)*((1+rate/12%)-1)
                 //   /(1+rate/12%)^(year*12)-1
@@ -43,37 +43,24 @@ namespace Operation
                 PMT2 = (int)PMT;
                 All2 = (int)All;
             }
-            else
-            {
-                MessageBox.Show("請輸入數值！");
-            }
+          
         }
  
         private void btnPMT_Click(object sender, EventArgs e)
         {
             
-            if (money == 0 || rate == 0 || year == 0 || downpay == 0)
-            {
-                MessageBox.Show("請輸入數值！");
-            }
-            else
-            {
+            
                 pay();
                 MessageBox.Show("月付額：" + PMT2 + "元");
-            }
+          
         }
 
         private void btnSum_Click(object sender, EventArgs e)
         {
-            if (money == 0 || rate == 0 || year == 0 || downpay == 0)
-            {
-                MessageBox.Show("請輸入數值！");
-            }
-            else
-            {
+            
                 pay();
                 MessageBox.Show(" 總付額：" + All2 + "元");
-            }
+           
         }
 
         private void btnReport_Click(object sender, EventArgs e)

@@ -22,8 +22,8 @@ namespace Operation
         StudentScore Score;
         List<StudentScore> lsStudentScore = new List<StudentScore>();
         string MaxResult, MinResult;
-        int  ScoreMin, ScoreMax;
-
+        int ScoreMin, ScoreMax;
+        
         void MinMax()
         {
            
@@ -72,7 +72,11 @@ namespace Operation
                     $"{(lsStudentScore[i].Min),6}"+
                     $"{(lsStudentScore[i].Max),6}\n";
             }
-            
+            if (lsStudentScore.Count > 0)
+            {
+                btnTotal.Enabled = true;
+            }
+
             labAll.Text = result;
         }
         private void btnClear_Click(object sender, EventArgs e)
@@ -84,6 +88,10 @@ namespace Operation
             txtMath.Clear();
             txtName.Clear();
             lsStudentScore.Clear();
+            btnTotal.Enabled = true;
+            btnRandom20.Enabled = true;
+            btnRandom.Enabled = true;
+            btnAdd.Enabled = true;
         }
         private void btnSignIn_Click(object sender, EventArgs e)
         {
@@ -91,7 +99,7 @@ namespace Operation
         bool isCNScore = int.TryParse(txtChinese.Text, out Score.ChineseScore);
         bool isENScore = int.TryParse(txtEnglish.Text, out Score.EnglishScore);
         bool isMAScore = int.TryParse(txtMath.Text, out Score.MathScore);
-            
+         
             Score.Name = txtName.Text;
             if (txtName.Text != "" && isCNScore == true && isENScore == true && isMAScore == true)
             {
@@ -180,6 +188,7 @@ namespace Operation
              
             if (lsStudentScore.Count > 0)
             {
+                
                 int totalChScore = lsStudentScore.Sum(x => x.ChineseScore);
                 int totalEnScore = lsStudentScore.Sum(x => x.EnglishScore);
                 int totalMathScore = lsStudentScore.Sum(x => x.MathScore);
@@ -198,6 +207,12 @@ namespace Operation
                     $"平均  : {ChScoreADV,5}{EnScoreADV,5}{MaScoreADV,5}\n" +
                     $"最高分: {MaxCHscore,5}{MaxEHscore,5}{MaxMAscore,5}\n" +
                     $"最低分: {MinCHscore,5}{MinEHscore,5}{MinMAscore,5}\n";
+            
+                    btnTotal.Enabled = false;
+                    btnRandom20.Enabled = false;
+                    btnRandom.Enabled = false;
+                    btnAdd.Enabled = false;
+
             }
             else
             {

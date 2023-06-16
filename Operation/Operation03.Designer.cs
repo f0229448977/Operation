@@ -213,7 +213,7 @@
             // 
             this.labText.BackColor = System.Drawing.Color.Black;
             this.labText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labText.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labText.Font = new System.Drawing.Font("微軟正黑體", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labText.ForeColor = System.Drawing.Color.White;
             this.labText.Location = new System.Drawing.Point(58, 327);
             this.labText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
