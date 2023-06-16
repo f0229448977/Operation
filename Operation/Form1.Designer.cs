@@ -39,11 +39,13 @@
             this.btnOpenOperation3 = new System.Windows.Forms.Button();
             this.btnOpenOpratin2 = new System.Windows.Forms.Button();
             this.btnOpenOpratin1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,6 +94,7 @@
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.Transparent;
             this.splitContainer2.Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer2.Panel2.BackgroundImage")));
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.splitContainer2.Panel2.Controls.Add(this.label1);
             this.splitContainer2.Panel2.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
             this.splitContainer2.Size = new System.Drawing.Size(1898, 936);
             this.splitContainer2.SplitterDistance = 554;
@@ -185,6 +188,18 @@
             this.btnOpenOpratin1.UseVisualStyleBackColor = true;
             this.btnOpenOpratin1.Click += new System.EventHandler(this.btnOpenOpratin1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(1157, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(183, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "學生：游子葳";
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -201,6 +216,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            this.splitContainer2.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -219,6 +236,7 @@
         private System.Windows.Forms.Button btnOpenOpration6;
         private System.Windows.Forms.Button btnOpenOpration7;
         private System.Windows.Forms.Button btnOpenOpration9;
+        private System.Windows.Forms.Label label1;
     }
 }
 

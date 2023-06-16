@@ -95,8 +95,6 @@ namespace Operation
             Operation08 OP09 = new Operation08();
             frmCall(OP09);
         }
-
- 
     }
     }
 
