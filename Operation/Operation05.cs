@@ -88,7 +88,6 @@ namespace Operation
             txtMath.Clear();
             txtName.Clear();
             lsStudentScore.Clear();
-            btnTotal.Enabled = true;
             btnRandom20.Enabled = true;
             btnRandom.Enabled = true;
             btnAdd.Enabled = true;
@@ -198,9 +197,9 @@ namespace Operation
                 int MaxCHscore = lsStudentScore.Max(x => x.ChineseScore);
                 int MaxEHscore = lsStudentScore.Max(x => x.EnglishScore);
                 int MaxMAscore = lsStudentScore.Max(x => x.MathScore);
-                double ChScoreADV = (Math.Round(Convert.ToDouble(totalChScore / lsStudentScore.Count) / 3, 1));
-                double EnScoreADV = (Math.Round(Convert.ToDouble(totalEnScore / lsStudentScore.Count) / 3, 1));
-                double MaScoreADV = (Math.Round(Convert.ToDouble(totalMathScore / lsStudentScore.Count) / 3, 1));
+                double ChScoreADV = Math.Round((double)totalChScore / lsStudentScore.Count,1) ;
+                double EnScoreADV = Math.Round((double)totalEnScore / lsStudentScore.Count, 1) ;
+                double MaScoreADV = Math.Round((double)totalMathScore / lsStudentScore.Count, 1);
 
 
                 result += $"總分  : {totalChScore,5}{totalEnScore,5}{totalMathScore,5}\n" +
@@ -208,10 +207,11 @@ namespace Operation
                     $"最高分: {MaxCHscore,5}{MaxEHscore,5}{MaxMAscore,5}\n" +
                     $"最低分: {MinCHscore,5}{MinEHscore,5}{MinMAscore,5}\n";
             
-                    btnTotal.Enabled = false;
+                    
                     btnRandom20.Enabled = false;
                     btnRandom.Enabled = false;
                     btnAdd.Enabled = false;
+                    btnTotal.Enabled = false;
 
             }
             else

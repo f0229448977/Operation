@@ -75,7 +75,7 @@ namespace Operation
             bool IsNum2 = double.TryParse(txtNum2.Text, out Num2);
             if (IsNum1 == true && IsNum2 == true)
             {
-                if (Convert.ToInt32(txtNum2.Text) != 0)
+                if (Convert.ToDouble(txtNum2.Text) != 0)
                 {
                     result = Convert.ToDouble(txtNum1.Text) / Convert.ToDouble(txtNum2.Text);
                     txtAnswer.Text = Convert.ToString(result);
